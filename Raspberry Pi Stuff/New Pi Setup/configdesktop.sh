@@ -21,3 +21,6 @@ echo "shopt -s histappend" >> ~/.bashrc
 sudo cp asound.state /var/lib/alsa
 sudo cp libfm.conf ~/.config/libfm
 
+echo -n " press enter to continue: "
+read ans
+
