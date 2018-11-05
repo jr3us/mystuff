@@ -1,3 +1,5 @@
-cat /sys/firmware/devicetree/base/model;echo
+cat /sys/firmware/devicetree/base/model
+echo
 
-read "Press enter to continue: "
+echo -n "Enter to continue: "
+read ans
