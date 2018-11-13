@@ -1,0 +1,18 @@
+
+# the first step just copies the GaryBuhrmaster version of the grabber over the
+# one installed by the xmltv package
+
+sudo cp ../tvgrab_zz_sdjson_sqlite/tv_grab_sdjson_sqlite /usr/bin
+sudo cp ../MythUtil-master/MythUtil* /usr/local/bin
+sudo cp ../HDHRUtil-master/HDHRUtil* /usr/local/bin
+
+sudo cp mythhdhrrecorder/mythhdhrrecorder /usr/local/bin
+
+sudo apt install python-natsort
+
+tv_grab_zz_sdjson_sqlite --manage-lineups
+
+.. select "Add Lineup", via the (guided) prompts select your location, and add in your OTA lineup
+.. select "Add Lineup", via the (guided) prompts select your location, and add in the HDHR Premium TV lineup which is either USA-0000001-CUSTOM for the east coast feed or USA-0000002-CUSTOM for the west coast feed. Which one you need to choose depends on your zipcode, as SiliconDust assigns your location based on your registration with them and you get that feed. There is no option to get both feeds. If you think your location should get the east coast feed, or the west coast feed (i.e. you are in the middle of the country and you disagree with SiliconDust's choices), you need to work with them directly.
+.. (if not already done so sometime in the past) select "Initialize DB" (typically using the defaults)
+.. exit from manage lineups
