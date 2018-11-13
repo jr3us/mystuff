@@ -1,0 +1,25 @@
+HDHRUtil-Tuner-channelScan - Report status, or start or stop a channel scan
+
+
+usage: HDHRUtil-Tuner-channelScan [-h] --hdhr HDHR [--status | --start | --stop]
+                                  [--source SOURCE]
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --hdhr HDHR      the HDHomeRun to manage
+  --status         status of the channel scan (default action)
+  --start          start a channel scan
+  --stop, --abort  stop a channel scan
+  --source SOURCE  specify a source type
+
+
+
+Scenerio:
+
+You want to start a new channel scan
+
+    HDHRUtil-Tuner-channelScan --hdhr=myhdhr.local --start
+
+You want to check the status of an ongoing scan
+
+    HDHRUtil-Tuner-channelScan --hdhr=myhdhr.local --status
